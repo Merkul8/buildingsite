@@ -123,17 +123,8 @@ section {
 }
 .profession {
     margin: 4rem 0;
-    font-size: 40px;
-    color: #e65100;
 }
-.parametrs {
-    margin-bottom: 2rem;
-    font-size: 25px;
-}
-.param-text {
-    margin-bottom: 2rem;
-    font-size: 15px;
-}
+
 /* Footer */
 .footer_1 {
     position: relative;

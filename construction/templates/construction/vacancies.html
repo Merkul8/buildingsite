@@ -1,1 +1,26 @@
 {% extends 'base.html' %}
+{% include 'inc/_vac_callback.html' %}
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <h1 class="profession">Мастер-электрик</h1>
+            <h3 class="parametrs">Место работы</h3>
+                <p class="param-text">Lorem ipsum dolor sit amet.</p>
+            <h3 class="parametrs">График работы</h3>
+                <p class="param-text">Lorem ipsum dolor sit amet.</p>
+            <h3 class="parametrs">Требуемый опыт работы</h3>
+                <p class="param-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur reprehenderit nesciunt eaque, amet corporis tenetur. Eius, voluptate molestias impedit minus repudiandae sunt praesentium animi aperiam assumenda consequuntur neque error.</p>
+        </div>
+        <div class="col-md-6 offset-md-1">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="work-price">от 70 000 руб</h1>
+                <div class="ml-auto">
+                    <a class="btn btn-dark rounded-0 py-4 px-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" href="#">Свяжитесь с нами</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block info %}{% endblock %}
