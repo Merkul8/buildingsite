@@ -170,3 +170,20 @@ section {
     font-weight: 600;
     font-weight: 200;
 }
+/* About Us */
+.text_size {
+    font-size: 25px!important;
+}
+.about_as_header {
+    font-size: 70px; 
+    font-weight: 300; 
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.about_us_caption {
+    font-size: 40px; 
+    color: #e65100; 
+    margin-top: 6rem; 
+    font-weight: 450;
+    text-align: center;
+}

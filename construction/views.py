@@ -80,7 +80,6 @@ class OtdelkaCons(ListView):
         context = super().get_context_data(**kwargs)
         context['logo'] = ConstructionModel.objects.get(pk=10)
         context['work_otdelka'] = ConstructionModel.objects.filter(category_id=1)
-        context['iter'] = 1
         context['form'] = self.form_class
         return context
     

@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="col-md-4 offset-md-4">
-            <h3 class="contact-caption">Трудоустройство:</h1>
+            <h3 class="contact-caption"><a href="{% url 'vacancies' %}" style="text-decoration: none; color: #000;">Трудоустройство:</a></h1>
                 <a class="contact-link" href="mailto:merkuha.ru@mail.ru"
                     style="color: #000; font-size: 30px;">merkuha.ru@mail.ru</a><br>
                 <a class="contact-link" href="tel:+79163590057" style="color: #000;font-size: 30px;">+7 (985) 965
@@ -42,11 +42,13 @@
                     Форма обатной связи
                 </div>
                 <div class="card-body">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button title="Отправить"
-                        style="width: 100%; border-radius: 3px; background-color: #212121; border-color: #212121; padding: 10px 15px; font-size: 2rem; color: #fefefe; border: none;">Отправить
-                        запрос</button>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button title="Отправить"
+                            style="width: 100%; border-radius: 3px; background-color: #212121; border-color: #212121; padding: 10px 15px; font-size: 2rem; color: #fefefe; border: none;">Отправить
+                            запрос</button>
+                    </form>
                 </div>
                 <div class="card-footer text-muted">
                     Политика конфеденциальности
