@@ -121,19 +121,7 @@ section {
     --bs-btn-disabled-bg: #424242;
     --bs-btn-disabled-border-color: #424242;
 }
-.profession {
-    margin: 4rem 0;
-    font-size: 40px;
-    color: #e65100;
-}
-.parametrs {
-    margin-bottom: 2rem;
-    font-size: 25px;
-}
-.param-text {
-    margin-bottom: 2rem;
-    font-size: 15px;
-}
+
 /* Footer */
 .footer_1 {
     position: relative;
@@ -174,4 +162,11 @@ section {
 .footer_links-li {
     margin-top: 1.5rem;
 }
-
+/* Contact Page */
+.contact-caption {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 25px;
+    font-weight: 600;
+    font-weight: 200;
+}
