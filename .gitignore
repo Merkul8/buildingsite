@@ -112,5 +112,5 @@ static_collected
 #Settings
 settings.py
 
-#Static
-*.css
+#Css
+css
