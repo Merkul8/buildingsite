@@ -112,5 +112,6 @@ static_collected
 #Settings
 settings.py
 
-#Css
-css
+#Static
+static
+buildingsite/static
