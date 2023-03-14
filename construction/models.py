@@ -22,7 +22,7 @@ class ConstructionModel(models.Model):
     class Meta:
         verbose_name = 'Вид работ'
         verbose_name_plural = 'Виды работ'
-        ordering = ['-created_at']
+        ordering = ['created_at']
 
 
 class Category(models.Model):
