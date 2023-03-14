@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 {% block main %}
 <div class="container">
+    {% block breadcrumb %}
+    <nav class="breadcr_pages" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+    </nav>
+    {% endblock %}
     <div class="row">
-        <div class="col-md-12" style="margin-top: 7rem;">
-            <h3 style="color: #9e9e9e; font-size: 20px;">Контакты</h3>
-            <h1 style="font-size: 60px; font-weight: 800;">Как нас найти</h1>
+        <div class="col-md-12">
+            <h1 class="contact_header">Как нас найти</h1>
         </div>
         <div class="col-md-4">
             <h3 class="contact-caption">Телефоны для связи:</h3>
-            <a class="contact-link" href="tel:+79163590057" style="color: #000;font-size: 30px;">+7 (916) 359 0057<br>+7
-                (985) 965 3630</a>
+            <a class="contact_number" href="tel:+79163590057">+7 (916) 359 0057</a><br>
+            <a class="contact_number" href="tel:+79859653630">+7 (985) 965 3630</a>
         </div>
         <div class="col-md-4">
             <h3 class="contact-caption">Почта для обращения:</h3>
@@ -24,29 +31,28 @@
             </div>
         </div>
         <div class="col-md-4 offset-md-4">
-            <h3 class="contact-caption"><a href="{% url 'vacancies' %}" style="text-decoration: none; color: #000;">Трудоустройство:</a></h1>
-                <a class="contact-link" href="mailto:merkuha.ru@mail.ru"
-                    style="color: #000; font-size: 30px;">merkuha.ru@mail.ru</a><br>
-                <a class="contact-link" href="tel:+79163590057" style="color: #000;font-size: 30px;">+7 (985) 965
-                    3630</a>
+            <h3 class="contact-caption">
+                <a class="bdc_link" href="{% url 'vacancies' %}">Трудоустройство:</a>
+            </h3>
+                <a class="contact_number" href="mailto:merkuha.ru@mail.ru">merkuha.ru@mail.ru</a><br>
+                <a class="contact_number" href="tel:+79163590057">+7 (985) 965 3630</a>
         </div>
         <div class="col-md-12">
-            <h1 style="margin-top: 8rem; font-size: 50px; font-weight: 300;">Наши реквизиты</h3>
-                <p style="margin-top: 3rem; font-size: 20px;">С помощью формы обратной связи вы можете заказать
+            <h1 class="contact_header">Наши реквизиты</h3>
+                <p class="text_before_form">С помощью формы обратной связи вы можете заказать
                     строительные услуги нашей компании, задать вопрос и получить консультацию специалистов. Для этого
-                    достаточно заполнить поля формы и нажать кнопку «Отправить».</p>
+                    достаточно заполнить поля формы и нажать кнопку «Отправить запрос».</p>
         </div>
         <div class="col-md-8 offset-md-2 mt-5">
             <div class="card text-center">
-                <div class="card-header" style="padding: 2rem 0; font-size: 30px;">
+                <div class="card-header py-4 form_header">
                     Форма обатной связи
                 </div>
                 <div class="card-body">
                     <form method="post">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button title="Отправить"
-                            style="width: 100%; border-radius: 3px; background-color: #212121; border-color: #212121; padding: 10px 15px; font-size: 2rem; color: #fefefe; border: none;">Отправить
+                        <button class="about_us_button" title="Отправить">Отправить
                             запрос</button>
                     </form>
                 </div>

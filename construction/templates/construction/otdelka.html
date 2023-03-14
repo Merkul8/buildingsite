@@ -2,6 +2,16 @@
 {% block main %}
 <main class="otdelka">
   <div class="container">
+    {% block breadcrumb %}
+    <div class="container">
+      <nav class="breadcr_pages" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Отделочные работы</li>
+        </ol>
+      </nav>
+    </div>
+    {% endblock %}
     <div class="row">
       {% for item in work_otdelka %}
       <div class="col-md-12">

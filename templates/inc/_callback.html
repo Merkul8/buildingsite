@@ -4,16 +4,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-10" id="exampleModalToggleLabel">Перезвоним вам <span class="sp_color">в
-                        течение 24ч.</span></h1>
+                        течение 10 минут.</span></h1>
             </div>
             <div class="modal-body">
                 <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
                     <p class="fs-5">* - поля обязательные для заполнения</p>
-                    <button title="Отправить"
-                        style="width: 100%; border-radius: 3px; background-color: #e65100; border-color: #e65100; padding: 10px 15px; font-size: 2rem; color: #fefefe; border: none;">Отправить
-                        запрос</button>
+                    <button class="callback_btn" title="Отправить">Отправить запрос</button>
                 </form>
             </div>
         </div>
