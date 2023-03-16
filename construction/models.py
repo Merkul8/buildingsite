@@ -14,7 +14,7 @@ class ConstructionModel(models.Model):
     category = models.ForeignKey('Category', verbose_name='Категория', on_delete=models.PROTECT, null=True, blank=True)
 
     def get_absolute_url(self):
-        return reverse('home', kwargs={'pk': self.pk})
+        return reverse('category_item', kwargs={'pk': self.pk})
     
     def __str__(self):
         return self.title

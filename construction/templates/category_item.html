@@ -7,30 +7,29 @@
       <nav class="breadcr_pages" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Отделочные работы</li>
+          <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'inzh' %}">Инженерные коммуникации</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ work_item.title }}</li>
         </ol>
       </nav>
     </div>
     {% endblock %}
     <div class="row">
-      {% for item in work_otdelka %}
       <div class="col-md-6 mt-5">
         <div class="content_work">
-          <a class="content_link" href="{{ item.get_absolute_url }}">
+          <a class="content_link" href="#">
             <div class="row">
               <div class="col-md-5">
-                <img src="{{ item.photo.url }}" class="d-block w-100 work_photo" alt="">
+                <img src="{{ work_item.photo.url }}" class="d-block w-100 work_photo" alt="">
               </div>
               <div class="col-md-7 content_items">
-                <h3 class="content_title">{{ item.title }}</h3>
-                <p class="content_text">{{ item.content|truncatewords:20 }}</p>
-                <p class="content_price">{{ item.price }}</p>
+                <h3 class="content_title">{{ work_item.title }}</h3>
+                <p class="content_text">{{ work_item.content|truncatewords:20 }}</p>
+                <p class="content_price">{{ work_item.price }}</p>
               </div>
             </div>
           </a>
         </div>
       </div>
-      {% endfor %}
     </div>
   </div>
 </main>
