@@ -9,5 +9,5 @@ urlpatterns = [
     path('contacts/', ContactCons.as_view(), name='contact'),
     path('vacancies/', VacanciesCons.as_view(), name='vacancies'),
     path('about-us/', AboutUsCons.as_view(), name='about_us'),
-    path('kategoriya/<int:pk>', CategoryInzh.as_view(), name='category_item'),
+    path('kategoriya/<str:slug>', CategoryInzh.as_view(), name='category_item'),
 ]

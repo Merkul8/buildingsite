@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import ConstructionModel, Category
+from .models import ConstructionModel, Category, Construction
 
 
 class ConstructionModelAdmin(admin.ModelAdmin):
@@ -11,6 +11,13 @@ class ConstructionModelAdmin(admin.ModelAdmin):
     list_filter = ('is_published', 'category')
 
 
+class ConstructionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'slug', 'price')
+    list_display_links = ('id', 'title')
+    search_fields = ('title', 'content')
+    list_filter = ('category',)
+
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
     list_display_links = ('id', 'title')
@@ -18,4 +25,5 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ConstructionModel, ConstructionModelAdmin)
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(Category, CategoryAdmin )
+admin.site.register(Construction, ConstructionAdmin)

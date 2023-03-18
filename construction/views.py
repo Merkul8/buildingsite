@@ -3,25 +3,25 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
-from .models import ConstructionModel
+from .models import ConstructionModel, Construction
 from django.views.generic import ListView, DeleteView
 
 class Home(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/main.html'
     form_class = ContactForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['pol'] = ConstructionModel.objects.get(pk=1)
-        context['polpod'] = ConstructionModel.objects.get(pk=2)
-        context['kotel'] = ConstructionModel.objects.get(pk=3)
-        context['electro'] = ConstructionModel.objects.get(pk=7)
-        context['lest'] = ConstructionModel.objects.get(pk=8)
-        context['potolki'] = ConstructionModel.objects.get(pk=9)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
-        context['inzh'] = ConstructionModel.objects.get(pk=11)
-        context['otdelka'] = ConstructionModel.objects.get(pk=12)
+        context['pol'] = Construction.objects.get(pk=1)
+        context['polpod'] = Construction.objects.get(pk=5)
+        context['kotel'] = Construction.objects.get(pk=6)
+        context['electro'] = Construction.objects.get(pk=7)
+        context['lest'] = Construction.objects.get(pk=3)
+        context['potolki'] = Construction.objects.get(pk=2)
+        context['logo'] = Construction.objects.get(pk=9)
+        context['inzh'] = Construction.objects.get(pk=10)
+        context['otdelka'] = Construction.objects.get(pk=11)
         context['form'] = self.form_class
         return context
     
@@ -43,14 +43,14 @@ class Home(ListView):
 
 
 class InzhCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/inzh.html'
     form_class = ContactForm
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
-        context['work_inzh'] = ConstructionModel.objects.filter(category_id=2)
+        context['logo'] = Construction.objects.get(pk=9)
+        context['work_inzh'] = Construction.objects.filter(category_id=2)
         context['form'] = self.form_class
         return context
     
@@ -72,7 +72,7 @@ class InzhCons(ListView):
 
 
 class CategoryInzh(DeleteView):
-    model = ConstructionModel
+    model = Construction
     form_class = ContactForm
     context_object_name = 'work_item'
     template_name = 'category_item.html'
@@ -101,14 +101,14 @@ class CategoryInzh(DeleteView):
 
 
 class OtdelkaCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/otdelka.html'
     form_class = ContactForm
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
-        context['work_otdelka'] = ConstructionModel.objects.filter(category_id=1)
+        context['logo'] = Construction.objects.get(pk=9)
+        context['work_otdelka'] = Construction.objects.filter(category_id=1)
         context['form'] = self.form_class
         return context
     
@@ -130,14 +130,14 @@ class OtdelkaCons(ListView):
 
 
 class HouseCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/houses.html'
     form_class = ContactForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
-        context['work_houses'] = ConstructionModel.objects.filter(category_id=3)
+        context['logo'] = Construction.objects.get(pk=9)
+        context['work_houses'] = Construction.objects.filter(category_id=3)
         context['form'] = self.form_class
         return context
     
@@ -159,13 +159,13 @@ class HouseCons(ListView):
 
 
 class ContactCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/contact.html'
     form_class = ContactForm
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
+        context['logo'] = Construction.objects.get(pk=9)
         context['form'] = self.form_class
         return context
     
@@ -187,13 +187,13 @@ class ContactCons(ListView):
 
 
 class VacanciesCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/vacancies.html'
     form_class = ContactForm
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
+        context['logo'] = Construction.objects.get(pk=9)
         context['form'] = self.form_class
         return context
     
@@ -221,7 +221,7 @@ class AboutUsCons(ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
+        context['logo'] = Construction.objects.get(pk=9)
         context['form'] = self.form_class
         return context
     

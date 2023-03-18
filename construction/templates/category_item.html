@@ -7,7 +7,7 @@
       <nav class="breadcr_pages" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
-          <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'inzh' %}">Инженерные коммуникации</a></li>
+          <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'inzh' %}">{{ work_item.category }}</a></li>
           <li class="breadcrumb-item active" aria-current="page">{{ work_item.title }}</li>
         </ol>
       </nav>

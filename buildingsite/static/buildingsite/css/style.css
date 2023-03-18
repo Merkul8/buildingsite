@@ -62,6 +62,10 @@ section {
     text-decoration: none;
     color: #212121;
 }
+.bdc_link:hover {
+    text-decoration: underline;
+    color: #e65100;
+}
 /* Information */
 .img-opas {
     opacity: 0.6;
