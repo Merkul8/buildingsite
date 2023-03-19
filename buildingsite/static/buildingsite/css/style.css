@@ -33,6 +33,10 @@ section {
     font-size: 2rem; 
     color: #fefefe; 
     border: none;
+    transition: 0.2s;
+}
+.about_us_button:hover {
+    background: #e65100;
 }
 .callback_btn {
     width: 100%; 
@@ -117,9 +121,9 @@ section {
     background-size: cover;
 }
 .main-title {
-    display: inline-block;
-    margin-top: 10rem;
-    font-size: 2rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 700;
 }
@@ -203,6 +207,7 @@ section {
 .footer_links-li {
     margin-top: 1.5rem;
 }
+
 /* Contact Page */
 .contact-caption {
     margin-top: 8rem;
@@ -231,6 +236,17 @@ section {
 }
 .form_header {
     font-size: 30px;
+}
+.contact_page_link {
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.contact_page_link:hover {
+    text-decoration: underline;
+    color: #e65100;
 }
 /* Vacancies Page*/
 .modifications {
@@ -288,6 +304,7 @@ section {
 }
 /* Inzh Page */
 .content_work {
+    height: 330px;
     color: #000;
     margin: 2rem 1rem;
     border: 1px solid #9e9e9e;
@@ -308,6 +325,8 @@ section {
 }
 .work_photo {
     border-radius: 7px;
+    height: 329px;
+    width: 251px;
 }
 .content_items {
     padding: 2rem 1.5rem;
@@ -326,4 +345,28 @@ section {
     padding-right: 3.2rem;
     padding-top: 2rem;
     font-weight: 600;
+}
+/* Houses Page */
+.content_work_h {
+    color: #000;
+    margin: 2rem 1rem;
+    border: 1px solid #9e9e9e;
+    border-radius: 8px;
+    transition: 0.5s;
+    height: 460;
+}
+.content_work_h:hover {
+    background: #e65100;
+    transform: scale(1.1);
+}
+.work_photo_h {
+    border-radius: 7px;
+    height: 460px;
+}
+.title_page {
+    text-align: center;
+    font-size: 30px;
+    color: #e65100;
+    font-weight: 600;
+    margin-top: 3rem;
 }

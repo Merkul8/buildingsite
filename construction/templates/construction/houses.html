@@ -1,13 +1,40 @@
 {% extends "base.html" %}
 {% block main %}
-{% block breadcrumb %}
-<div class="container">
-    <nav class="breadcr_pages" aria-label="breadcrumb">
+<main class="houses">
+  <div class="container">
+    {% block breadcrumb %}
+    <div class="container">
+      <nav class="breadcr_pages" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Дома под ключ</li>
+          <li class="breadcrumb-item"><a class="bdc_link" href="{% url 'home' %}">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Дома под ключ</li>
         </ol>
-    </nav>
-</div>
+      </nav>
+    </div>
+    {% endblock %}
+    <h1 class="contact_header">Проекты домов</h1>
+    <div class="row">
+      {% for item in work_houses %}
+      <div class="col-md-10 offset-md-1 mt-5">
+        <div class="content_work_h">
+          <a class="content_link" href="{{ item.get_absolute_url }}">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="{{ item.photo.url }}" class="d-block w-100 work_photo_h" alt="">
+              </div>
+              <div class="col-md-7 content_items">
+                <h3 class="content_title">{{ item.title }}</h3>
+                <p class="content_text">{{ item.content|truncatewords:20 }}</p>
+                <p class="content_price">{{ item.price }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <h3 class="title_page">{{ project_text }}</h3>
+  </div>
+</main>
 {% endblock %}
-{% endblock %}
+{% block info %}{% endblock %}

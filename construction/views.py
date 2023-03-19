@@ -3,8 +3,8 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
-from .models import ConstructionModel, Construction
-from django.views.generic import ListView, DeleteView
+from .models import Construction
+from django.views.generic import ListView, DetailView
 
 class Home(ListView):
     model = Construction
@@ -71,7 +71,7 @@ class InzhCons(ListView):
                 messages.error(request, 'Ошибка отправки')
 
 
-class CategoryInzh(DeleteView):
+class CategoryInzh(DetailView):
     model = Construction
     form_class = ContactForm
     context_object_name = 'work_item'
@@ -79,7 +79,7 @@ class CategoryInzh(DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['logo'] = ConstructionModel.objects.get(pk=10)
+        context['logo'] = Construction.objects.get(pk=9)
         context['form'] = self.form_class
         return context
     
@@ -138,6 +138,7 @@ class HouseCons(ListView):
         context = super().get_context_data(**kwargs)
         context['logo'] = Construction.objects.get(pk=9)
         context['work_houses'] = Construction.objects.filter(category_id=3)
+        context['project_text'] = 'Проекты домов обсуждаются индивидуально с каждым клиентом, сделаем всё по вашему желанию!'
         context['form'] = self.form_class
         return context
     
@@ -215,7 +216,7 @@ class VacanciesCons(ListView):
 
 
 class AboutUsCons(ListView):
-    model = ConstructionModel
+    model = Construction
     template_name = 'construction/about_us.html'
     form_class = ContactForm
     
