@@ -10,6 +10,8 @@ class Construction(models.Model):
     photo_2 = models.ImageField(blank=True, upload_to='photos/%Y/%m/%d/', verbose_name='Фото-2')
     photo_3 = models.ImageField(blank=True, upload_to='photos/%Y/%m/%d/', verbose_name='Фото-3')
     price = models.CharField(blank=True, max_length=150, verbose_name='Цена')
+    size = models.CharField(blank=True, max_length=150, verbose_name='Размер помещения')
+    floors = models.CharField(blank=True, max_length=150, verbose_name='Кол-во этажей')
     category = models.ForeignKey('Category', verbose_name='Категория', on_delete=models.PROTECT, null=True, blank=True)
 
     def get_absolute_url(self):
