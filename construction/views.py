@@ -223,6 +223,14 @@ class AboutUsCons(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['logo'] = Construction.objects.get(pk=9)
+        context['pol'] = Construction.objects.get(pk=1)
+        context['pot'] = Construction.objects.get(pk=2)
+        context['les'] = Construction.objects.get(pk=3)
+        context['van'] = Construction.objects.get(pk=4)
+        context['polpod'] = Construction.objects.get(pk=5)
+        context['kot'] = Construction.objects.get(pk=6)
+        context['ele'] = Construction.objects.get(pk=7)
+        context['voda'] = Construction.objects.get(pk=8)
         context['form'] = self.form_class
         return context
     
