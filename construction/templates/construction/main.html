@@ -8,13 +8,13 @@
             {% block breadcrumb %}
             {% endblock %}
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-flex">
                     <div class="main-title">
                         <strong>Merkuha Building Company</strong>
                         <p class="title-color-text">с вами уже 10 лет!</p>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-1">
+                <div class="col-md-12 col-lg-12 col-xl-5 offset-xl-1 col-xxl-5 offset-xxl-1 d-flex">
                     <div class="main-form">
                         <span class="content-text">Узнайте стоймость отделочного проекта или инженерных работ</span>
                         <p class="par-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum
@@ -35,14 +35,14 @@
 <br>
 {% block info %}
 <div class="information">
-    <div class="container">
+    <div class="container-lg">
         <div class="row">
-            <div class="col-md-6 px-0 mt-5">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-xxl-6 px-0 mt-5">
                 <div class="card text-bg-dark">
                     <img class="img-opas" src="{{ inzh.photo.url }}" class="card-img">
                     <div class="card-img-overlay info_card">
                         <h5 class="card-title info_title">Инженерные коммуникации</h5>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-lg-5 col-xl-4 col-xll-4">
                             <p class="card-text info_text">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit.
                                 Pellentesque pulvinar eu dolor nec
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-5 px-0">
+            <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-6 mt-5 px-0">
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-5 px-0">
+            <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-6 mt-5 px-0">
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
@@ -133,14 +133,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-5 px-0">
+            <div class="col-md-7 col-lg-7 col-xl-7 col-xxl-6 mt-5 px-0 go_bottom">
                 <div class="card text-bg-dark">
                     <img class="img-opas" src="{{ otdelka.photo.url }}" class="card-img">
                     <div class="card-img-overlay info_card_2">
-                        <div class="col-md-4 offset-md-8">
+                        <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 col-xxl-4 offset-xxl-8">
                             <h5 class="card-title info_title">Отделка дома</h5>
                         </div>
-                        <div class="col-md-4 offset-md-8">
+                        <div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7 col-xl-4 offset-xl-8 col-xxl-4 offset-xxl-8">
                             <p class="card-text info_text">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing
                                 elit. Pellentesque pulvinar eu dolor nec
@@ -152,23 +152,23 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div class="title_info">
                     <h1 class="name_work">Инженерные коммуникации</h1>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ kotel.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ kotel.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ kotel.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">{{ kotel.content|truncatewords:12 }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ electro.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ electro.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ electro.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -176,9 +176,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ polpod.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ polpod.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ polpod.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -186,17 +186,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 col-xxl-4 offset-xxl-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'inzh' %}">СМОТРЕТЬ БОЛЬШЕ</a>
             </div>
-            <div class="col-md-12">
+            <div class="col-lg-12 col-xl-12 col-xxl-12">
                 <div class="title_info">
                     <h1 class="name_work">Отделочные работы</h1>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ lest.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ lest.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ lest.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -204,9 +204,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ potolki.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ potolki.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ potolki.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -214,9 +214,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="card">
-                    <img src="{{ pol.photo.url }}" class="card-img-top" height="564" alt="...">
+                    <img src="{{ pol.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title px-3 py-3">{{ pol.title }}</h3>
                         <p class="card-text px-3 py-3 info_text">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 col-xxl-4 offset-xxl-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'otdelka' %}">СМОТРЕТЬ БОЛЬШЕ</a>
             </div>
         </div>

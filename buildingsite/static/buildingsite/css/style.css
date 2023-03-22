@@ -113,7 +113,9 @@ section {
     width: 100%;
     font-size: 2rem;
 }
-
+.card-img-top {
+    height: 564px;
+}
 /* Main */
 .main {
     height: 85rem;
@@ -213,7 +215,9 @@ section {
 .footer_links-li {
     margin-top: 1.5rem;
 }
-
+.footer_block {
+    margin-left: 10rem;
+}
 /* Contact Page */
 .contact-caption {
     margin-top: 8rem;
@@ -445,3 +449,5 @@ section {
     font-weight: 700;
     margin: 3rem 2rem;
 }
+
+
