@@ -1,0 +1,200 @@
+/* Adaptive Screen */
+
+@media screen and (min-width: 1400px) {
+    .header_recv {
+        margin-left: 8rem !important;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+
+    .contact_link {
+        padding-left: 5rem;
+    }
+
+    .breaking_items {
+        width: 380px;
+    }
+
+    .main-title {
+        margin-top: 14rem!important;
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .contact_link {
+        padding-left: 3rem;
+    }
+    
+    .d-flex {
+        justify-content: center;
+    }
+
+    .main-title {
+        margin-top: 8rem!important;
+        margin-left: 0!important;
+    }
+
+    .breaking_items {
+        width: 320px;
+        margin-left: 4rem!important;
+    }
+
+    .breaking_name {
+        font-size: 20px;
+    }
+
+    .go_bottom {
+        margin-top: 8rem!important;
+    }
+
+    .footer_block {
+        margin-left: 7rem!important;
+    }
+    .main-form {
+        width: 50rem!important;
+        height: 55rem!important;
+        margin-top: 5rem!important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    
+    .name_work {
+        margin-left: 5rem;
+    }
+    
+    .button {
+        padding: 2.5rem 4.5rem !important;
+        font-size: 2rem !important;
+    }
+
+    .main {
+        height: 100rem !important;
+    }
+
+    .main-title {
+        font-size: 5.3rem !important;
+    }
+
+    .main-form {
+        width: 60rem!important;
+        height: 60rem!important;
+        margin-top: 5rem!important;
+    }
+
+    .content-text {
+        margin-top: 3rem;
+        font-size: 30px;
+        padding: 10px 30px !important;
+    }
+
+    .par-text {
+        font-size: 1.6rem !important;
+        padding: 2rem 2rem !important;
+    }
+
+    .home_button {
+        padding: 1.8rem 7rem !important;
+        font-size: 3rem !important;
+        font-weight: 400 !important;
+    }
+
+    .card_info {
+        margin-top: 3rem;
+    }
+
+    .info_text {
+        font-size: 2.3rem !important;
+        line-height: 30px !important;
+        padding: 2rem 2rem;
+    }
+
+    .info_title {
+        font-size: 35px !important;
+        padding: 2rem 2rem;
+    }
+
+    .name_work {
+        font-size: 6rem !important;
+    }
+
+    .button_work {
+        font-size: 3rem !important;
+        margin-bottom: 4rem;
+    }
+
+    .d-none {
+        display: none !important;
+    }
+
+    .header-top {
+        margin-top: 0 !important;
+    }
+
+    .red_nav {
+        flex-direction: column !important;
+        justify-content: normal !important;
+        align-items: normal !important;
+    }
+
+    .logo_img {
+        margin: 2rem 0 !important;
+    }
+
+    .munu_mobail {
+        height: 3.5em;
+        width: 4em;
+        --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.7);
+        transition: 0.3s;
+    }
+
+    .munu_mobail:hover {
+        background-color: #e65100;
+        border: #e65100;
+    }
+    
+    .offcanvas-title {
+        font-size: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .nav-link {
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .button {
+        margin-top: 3rem !important;
+        margin-left: 5.7rem !important;
+    }
+
+    .breaking_items {
+        margin-left: 0 !important;
+    }
+
+    .footer_1 {
+        height: 50rem !important;
+    }
+
+    .footer_block {
+        margin-bottom: 3rem;
+        margin-left: 13rem !important;
+    }
+
+    .footer_button_text {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .logo_img {
+        height: 135px !important;
+        width: 160px !important;
+    }
+}
