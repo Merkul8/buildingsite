@@ -121,6 +121,7 @@ section {
     height: 85rem;
     background:#fff url(../img/main_bd.jpg);
     background-size: cover;
+    background-position: top;
 }
 .main-title {
     margin-top: 15rem;

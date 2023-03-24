@@ -50,16 +50,11 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 offset-lg-3 d-none d-lg-block mt-5">
+        <div class="col-lg-3 offset-lg-2 d-none d-lg-block mt-5">
             <div class="header_recv">
                 <a class="contact_link" href="tel:+79163590057">+7 916 359 00 57</a><br>
                 <a class="contact_link" href="mailto:merkuha.ru@mail.ru">merkuha.ru@mail.ru</a>
             </div>
-        </div>
-        <div class="col-6 offset-3 d-lg-none d-flex justify-content-end align-items-center">
-            <a href="tel:+79163590057" class="mobail_phone d-flex justify-content-center align-items-center">1</a>
-            <a href="mailto:merkuha.ru@mail.ru"
-                class="mobail_phone d-flex justify-content-center align-items-center">2</a>
         </div>
         <div class="col-lg-3 d-none d-lg-block">
             <div class="wrap">
@@ -77,23 +72,19 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid red_nav">
             <div class="row align-items-center">
-                <div class="col-md-5 offset-md-1">
+                <div class="col-6 col-sm-5 offset-sm-1">
                     <a href="{% url 'home' %}">
                         <img src="{{ logo.photo.url }}" class="logo_img" alt="merkuha building company">
                     </a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-5 col-sm-5">
                     <div class="row align-items-center">
-                        <div class="col-md-2 offset-md-6">
+                        <div class="col-2 offset-4 col-sm-2 offset-sm-5">
                             <a href="tel:+79163590057"
                                 class="mobail_phone d-flex justify-content-center align-items-center"><i
                                     class="fas fa-phone"></i></a>
                         </div>
-                        <div class="col-md-2">
-                            <a href="mailto:merkuha.ru@mail.ru"
-                                class="mobail_phone d-flex justify-content-center align-items-center"><i class="fas fa-light fa-at"></i></a>
-                        </div>
-                        <div class="col-md-2">
+                        <div class="col-2 offset-3 col-sm-2 offset-sm-2 px-2">
                             <button class="navbar-toggler munu_mobail" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                                 <span class="navbar-toggler-icon"></span>
@@ -112,28 +103,28 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">Главная</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'home' %}">Главная</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'otdelka' %}">Отделочные работы</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'otdelka' %}">Отделочные работы</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'inzh' %}">Инженерный коммуникации</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'inzh' %}">Инженерный коммуникации</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'house' %}">Дома под ключ</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'house' %}">Дома под ключ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'contact' %}">Контакты</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'contact' %}">Контакты</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'vacancies' %}">Вакансии</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'vacancies' %}">Вакансии</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'about_us' %}">О нас</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="{% url 'about_us' %}">О нас</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-item">
                             <button class="button header-btn" data-bs-target="#exampleModalToggle"
                                 data-bs-toggle="modal">
                                 Заказать проект

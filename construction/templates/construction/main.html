@@ -8,17 +8,17 @@
             {% block breadcrumb %}
             {% endblock %}
             <div class="row">
-                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                <div class="col-12 col-xs-12 col-lg-6 d-flex justify-content-center">
                     <div class="main-title">
                         <strong>Merkuha Building Company</strong>
                         <p class="title-color-text">с вами уже 10 лет!</p>
                     </div>
                 </div>
                 <div
-                    class="col-12 col-lg-6 d-flex justify-content-center">
+                    class="col-12 col-xs-12 col-lg-6 d-flex justify-content-center">
                     <div class="main-form">
                         <span class="content-text">Узнайте стоймость отделочного проекта или инженерных работ</span>
-                        <p class="par-text">Заказ проекта для строительства дома - это один из самых важных шагов в вашем будущем жилищном проекте. Правильно разработанный проект дома учитывает все ваши пожелания и требования к будущей постройке, гарантируя комфорт и безопасность для всех жильцов. При заказе проекта у нас, вы получаете не только профессиональную консультацию и разработку проекта, но и экономию вашего времени и денег. Наша команда учитывает все нюансы и особенности вашего участка, а также планировку и дизайн вашего будущего дома, чтобы обеспечить вам оптимальное соотношение цены и качества.
+                        <p class="par-text">Заказ проекта для строительства дома - это один из самых важных шагов в вашем будущем жилищном проекте.<br>Правильно разработанный проект дома учитывает все ваши пожелания и требования к будущей постройке, гарантируя комфорт и безопасность для всех жильцов.<br>При заказе проекта у нас, вы получаете не только профессиональную консультацию и разработку проекта, но и экономию вашего времени и денег.<br>Наша команда учитывает все нюансы и особенности вашего участка, а также планировку и дизайн вашего будущего дома, чтобы обеспечить вам оптимальное соотношение цены и качества.
 
                             Кроме того, мы работаем с современными технологиями и материалами, что позволяет нам создавать уникальные и надежные проекты, отвечающие самым высоким требованиям.</p>
                         <div class="ml-auto">
@@ -36,8 +36,8 @@
 {% block info %}
 <div class="information">
     <div class="container">
-        <div class="row flex-direction-column">
-            <div class="col-12 col-lg-6 px-0 mt-5">
+        <div class="row info_blocks">
+            <div class="col-12 col-xs-12 col-lg-6 px-0 mt-5">
                 <div class="card text-bg-dark card_info">
                     <img class="img-opas" src="{{ inzh.photo.url }}" class="card-img">
                     <div class="card-img-overlay info_card">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-lg-6 mt-5 px-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-5 px-0">
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-lg-6 mt-5 px-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-5 px-0">
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
@@ -131,16 +131,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-5 px-0 go_bottom">
+            <div class="col-12 col-xs-12 col-lg-6 mt-5 px-0 go_bottom">
                 <div class="card text-bg-dark card_info">
                     <img class="img-opas" src="{{ otdelka.photo.url }}" class="card-img">
                     <div class="card-img-overlay info_card_2">
                         <div
-                            class="col-12 col-lg-6 offset-lg-6">
+                            class="col-12 col-xs-12 col-lg-6 offset-lg-6">
                             <h5 class="card-title info_title">Отделочные работы</h5>
                         </div>
                         <div
-                            class="col-12 col-lg-6 offset-lg-6">
+                            class="col-12 col-xs-12 col-lg-6 offset-lg-6">
                             <p class="card-text info_text">Отделочные работы – это завершающий этап строительства, который позволяет превратить голые стены и полы в комфортабельное жилье или офисное пространство. Мы предлагаем полный спектр отделочных работ: от шпаклевки и
                                  покраски до укладки напольных покрытий и установки осветительных приборов. Доверьте нам создание уютного и функционального интерьера.</p>
                         </div>
@@ -151,12 +151,12 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <div class="title_info">
                     <h1 class="name_work">Инженерные коммуникации</h1>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ kotel.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -165,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ electro.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ polpod.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 offset-lg-4">
+            <div class="col-10 offset-1 col-lg-4 offset-lg-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'inzh' %}">СМОТРЕТЬ БОЛЬШЕ</a>
             </div>
             <div class="col-12">
@@ -191,7 +191,7 @@
                     <h1 class="name_work">Отделочные работы</h1>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ lest.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ potolki.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-5">
+            <div class="col-10 offset-1 col-lg-4 mt-5">
                 <div class="card">
                     <img src="{{ pol.photo.url }}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 offset-lg-4">
+            <div class="col-10 offset-1 col-lg-4 offset-lg-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'otdelka' %}">СМОТРЕТЬ БОЛЬШЕ</a>
             </div>
         </div>
