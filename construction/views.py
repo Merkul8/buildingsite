@@ -14,11 +14,13 @@ class Home(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['pol'] = Construction.objects.get(pk=1)
+        context['vanna'] = Construction.objects.get(pk=4)
         context['polpod'] = Construction.objects.get(pk=5)
         context['kotel'] = Construction.objects.get(pk=6)
         context['electro'] = Construction.objects.get(pk=7)
         context['lest'] = Construction.objects.get(pk=3)
         context['potolki'] = Construction.objects.get(pk=2)
+        context['voda'] = Construction.objects.get(pk=8)
         context['logo'] = Construction.objects.get(pk=9)
         context['inzh'] = Construction.objects.get(pk=10)
         context['otdelka'] = Construction.objects.get(pk=11)

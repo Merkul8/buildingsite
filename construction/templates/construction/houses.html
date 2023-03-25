@@ -15,7 +15,7 @@
     <h1 class="contact_header">Проекты домов</h1>
     <div class="row">
       {% for item in work_houses %}
-      <div class="col-md-4 mt-5 px-0">
+      <div class="col-12 col-sm-6 col-lg-4 mt-5 px-0">
         <a class="content_link_h" href="{{ item.get_absolute_url }}">
           <div class="house_category">
             <img src="{{ item.photo.url }}" class="house_img" alt="...">           

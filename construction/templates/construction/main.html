@@ -14,13 +14,19 @@
                         <p class="title-color-text">с вами уже 10 лет!</p>
                     </div>
                 </div>
-                <div
-                    class="col-12 col-xs-12 col-lg-6 d-flex justify-content-center">
+                <div class="col-12 col-xs-12 col-lg-6 d-flex justify-content-center">
                     <div class="main-form">
                         <span class="content-text">Узнайте стоймость отделочного проекта или инженерных работ</span>
-                        <p class="par-text">Заказ проекта для строительства дома - это один из самых важных шагов в вашем будущем жилищном проекте.<br>Правильно разработанный проект дома учитывает все ваши пожелания и требования к будущей постройке, гарантируя комфорт и безопасность для всех жильцов.<br>При заказе проекта у нас, вы получаете не только профессиональную консультацию и разработку проекта, но и экономию вашего времени и денег.<br>Наша команда учитывает все нюансы и особенности вашего участка, а также планировку и дизайн вашего будущего дома, чтобы обеспечить вам оптимальное соотношение цены и качества.
+                        <p class="par-text">Заказ проекта для строительства дома - это один из самых важных шагов в
+                            вашем будущем жилищном проекте.<br>Правильно разработанный проект дома учитывает все ваши
+                            пожелания и требования к будущей постройке, гарантируя комфорт и безопасность для всех
+                            жильцов.<br>При заказе проекта у нас, вы получаете не только профессиональную консультацию и
+                            разработку проекта, но и экономию вашего времени и денег.<br>Наша команда учитывает все
+                            нюансы и особенности вашего участка, а также планировку и дизайн вашего будущего дома, чтобы
+                            обеспечить вам оптимальное соотношение цены и качества.
 
-                            Кроме того, мы работаем с современными технологиями и материалами, что позволяет нам создавать уникальные и надежные проекты, отвечающие самым высоким требованиям.</p>
+                            Кроме того, мы работаем с современными технологиями и материалами, что позволяет нам
+                            создавать уникальные и надежные проекты, отвечающие самым высоким требованиям.</p>
                         <div class="ml-auto">
                             <a class="btn btn-dark rounded-0 home_button" data-bs-target="#exampleModalToggle"
                                 data-bs-toggle="modal" href="#" title="Получить консультацию">нужна консультация</a>
@@ -43,8 +49,12 @@
                     <div class="card-img-overlay info_card">
                         <h5 class="card-title info_title">Инженерные коммуникации</h5>
                         <div class="col-12 col-lg-6">
-                            <p class="card-text info_text">Инженерные коммуникации – это система инженерных сетей, предназначенная для обеспечения комфортных условий жизни и работы в зданиях. Она включает в себя электроснабжение,
-                                 водоснабжение, канализацию, отопление и вентиляцию. Наши специалисты обладают богатым опытом проектирования и монтажа инженерных коммуникаций различного уровня сложности и масштаба. </p>
+                            <p class="card-text info_text">Инженерные коммуникации – это система инженерных сетей,
+                                предназначенная для обеспечения комфортных условий жизни и работы в зданиях. Она
+                                включает в себя электроснабжение,
+                                водоснабжение, канализацию, отопление и вентиляцию. Наши специалисты обладают богатым
+                                опытом проектирования и монтажа инженерных коммуникаций различного уровня сложности и
+                                масштаба. </p>
                         </div>
 
                     </div>
@@ -54,7 +64,7 @@
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Водоснабжение и водоотведение</a>
+                            <a class="info-link" href="{{ voda.get_absolute_url }}">Водоснабжение и водоотведение</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -62,7 +72,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Электрика</a>
+                            <a class="info-link" href="{{ electro.get_absolute_url }}">Электрика</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -70,7 +80,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Котельная</a>
+                            <a class="info-link" href="{{ kotel.get_absolute_url }}">Котельная</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -78,7 +88,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Тёплые полы</a>
+                            <a class="info-link" href="{{ polpod.get_absolute_url }}">Тёплые полы</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -90,7 +100,7 @@
                 <div class="breaking_items">
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Настил полов</a>
+                            <a class="info-link" href="{{ pol.get_absolute_url }}">Настил полов</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -98,7 +108,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Подшив потолка</a>
+                            <a class="info-link" href="{{ potolki.get_absolute_url }}">Подшив потолка</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -106,8 +116,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" title="Монтаж внутренних перегородок" href="#">Монтаж внутренних
-                                перегородок</a>
+                            <a class="info-link" title="Монтаж внутренних перегородок" href="{{ vanna.get_absolute_url }}">Ванная комната</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -115,15 +124,7 @@
                     </div>
                     <div class="breaking_item">
                         <div class="breaking_name">
-                            <a class="info-link" href="#">Лестница в доме</a>
-                        </div>
-                        <div class="breaking_price">
-                            от 9999 руб/м<sup>2</sup>
-                        </div>
-                    </div>
-                    <div class="breaking_item">
-                        <div class="breaking_name">
-                            <a class="info-link" href="#">Декор внутренних перегородок</a>
+                            <a class="info-link" href="{{ lest.get_absolute_url }}">Лестница в доме</a>
                         </div>
                         <div class="breaking_price">
                             от 9999 руб/м<sup>2</sup>
@@ -135,14 +136,15 @@
                 <div class="card text-bg-dark card_info">
                     <img class="img-opas" src="{{ otdelka.photo.url }}" class="card-img">
                     <div class="card-img-overlay info_card_2">
-                        <div
-                            class="col-12 col-xs-12 col-lg-6 offset-lg-6">
+                        <div class="col-12">
                             <h5 class="card-title info_title">Отделочные работы</h5>
                         </div>
-                        <div
-                            class="col-12 col-xs-12 col-lg-6 offset-lg-6">
-                            <p class="card-text info_text">Отделочные работы – это завершающий этап строительства, который позволяет превратить голые стены и полы в комфортабельное жилье или офисное пространство. Мы предлагаем полный спектр отделочных работ: от шпаклевки и
-                                 покраски до укладки напольных покрытий и установки осветительных приборов. Доверьте нам создание уютного и функционального интерьера.</p>
+                        <div class="col-12 col-xs-12 col-lg-7 offset-lg-5">
+                            <p class="card-text info_text">Отделочные работы – это завершающий этап строительства,
+                                который позволяет превратить голые стены и полы в комфортабельное жилье или офисное
+                                пространство. Мы предлагаем полный спектр отделочных работ: от шпаклевки и
+                                покраски до укладки напольных покрытий и установки осветительных приборов. Доверьте нам
+                                создание уютного и функционального интерьера.</p>
                         </div>
                     </div>
                 </div>
@@ -156,32 +158,38 @@
                     <h1 class="name_work">Инженерные коммуникации</h1>
                 </div>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ kotel.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ kotel.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ kotel.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ kotel.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ kotel.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ kotel.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ kotel.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ electro.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ electro.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ electro.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ electro.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ electro.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ electro.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ electro.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ polpod.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ polpod.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ polpod.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ polpod.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ polpod.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ polpod.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ polpod.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-10 offset-1 col-lg-4 offset-lg-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'inzh' %}">СМОТРЕТЬ БОЛЬШЕ</a>
@@ -191,32 +199,38 @@
                     <h1 class="name_work">Отделочные работы</h1>
                 </div>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ lest.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ lest.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ lest.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ lest.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ lest.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ lest.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ lest.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ potolki.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ potolki.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ potolki.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ potolki.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ potolki.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ potolki.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ potolki.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-10 offset-1 col-lg-4 mt-5">
-                <div class="card">
-                    <img src="{{ pol.photo.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title px-3 py-3 home_title">{{ pol.title }}</h3>
-                        <p class="card-text px-3 py-3 info_text">{{ pol.content|truncatewords:20 }}</p>
+            <div class="col-10 offset-1 col-lg-4 offset-lg-0 mt-5">
+                <a class="info_link" href="{{ pol.get_absolute_url }}">
+                    <div class="card">
+                        <img src="{{ pol.photo.url }}" class="card-img-top photo_info" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title px-3 py-3 home_title">{{ pol.title }}</h3>
+                            <p class="card-text px-3 py-3 info_text">{{ pol.content|truncatewords:20 }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-10 offset-1 col-lg-4 offset-lg-4">
                 <a class="btn btn-dark rounded-0 py-4 px-5 button_work" href="{% url 'otdelka' %}">СМОТРЕТЬ БОЛЬШЕ</a>

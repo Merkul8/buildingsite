@@ -1,13 +1,26 @@
 /* Adaptive Screen */
 
 @media screen and (min-width: 1400px) {
+    /* Home Page */
     .header_recv {
         margin-left: 8rem !important;
+    }
+
+    .home_button {
+        margin-top: 1.5rem !important;
+    }
+
+    .photo_info {
+        height: 560px !important;
+    }
+    /* House Page */
+    .house_img {
+        height: 540px !important;
     }
 }
 
 @media screen and (max-width: 1399px) {
-
+    /* Home Page */
     .contact_link {
         padding-left: 5rem;
     }
@@ -20,10 +33,23 @@
         margin-top: 14rem!important;
         margin-left: 0 !important;
     }
+
+    .home_button {
+        margin-top: 1.5rem !important;
+    }
+
+    .photo_info {
+        height: 482px !important;
+    }
+
+    /* House Page */
+    .house_img {
+        height: 504px !important;
+    }
 }
 
 @media screen and (max-width: 1199px) {
-    
+    /* Home Page */
     .d-flex {
         justify-content: center;
     }
@@ -54,18 +80,46 @@
         height: 55rem!important;
         margin-top: 5rem!important;
     }
+    /* Inzh and Otdelka Page */
+    .content_work {
+        height: 305px !important;
+        margin: 0 !important;
+    }
 
+    .content_work:hover {
+        transform: scale(1.06) !important;
+    }
+
+    .work_photo {
+        height: 304px !important;
+    }
+
+    .content_title {
+        font-size: 25px !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .content_text {
+        font-size: 16px !important;
+    }
+
+    .content_price {
+        padding-top: 1.5rem !important;
+    }
+    /* House Page */
+    .house_img {
+        height: 460px !important;
+    }
+    
+    .house_category {
+        height: 460px !important;
+    }
 }
 
 @media screen and (max-width: 991px) {
-    
+    /* Home Page */
     .name_work {
         margin-left: 5rem;
-    }
-    
-    .button {
-        padding: 2.5rem 4.5rem !important;
-        font-size: 2rem !important;
     }
 
     .main {
@@ -177,11 +231,6 @@
         color: white;
     }
 
-    .button {
-        margin-top: 3rem !important;
-        margin-left: 5.7rem !important;
-    }
-
     .breaking_items {
         margin-left: 0 !important;
     }
@@ -199,9 +248,42 @@
         font-size: 1.6rem;
         font-weight: 600;
     }
+
+    /* Inzh and Otdelka Page */
+    .content_work {
+        height: 340px !important;
+        margin: 1rem 0 !important;
+    }
+
+    .content_work:hover {
+        transform: scale(1.1) !important;
+    }
+
+    .work_photo {
+        height: 339px !important;
+    }
+
+    .content_title {
+        font-size: 35px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .content_text {
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+
+    .content_price {
+        padding-top: 2rem !important;
+    }
+    /* Contact Page */
+    .about_us_button {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    /* Home Page */
     .main {
         height: 115rem !important;
     }
@@ -240,10 +322,72 @@
         left: -23px;
         top: 5px;
     }
+    /* Inzh and Otdelka Page */
+    .content_work {
+        height: 305px !important;
+        margin: 0 !important;
+    }
+
+    .content_work:hover {
+        transform: scale(1.06) !important;
+    }
+
+    .work_photo {
+        height: 304px !important;
+    }
+
+    .content_title {
+        font-size: 25px !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .content_text {
+        font-size: 16px !important;
+    }
+
+    .content_price {
+        padding-top: 1.5rem !important;
+    }
+    /* House Page */
+    .house_img {
+        height: 400px !important;
+    }
+    
+    .house_category {
+        height: 400px !important;
+    }
+
+    .house_title {
+        margin-bottom: 1.5rem !important;
+        margin-top: 1.5rem !important;
+        margin-left: 1.5rem !important;
+        font-size: 25px !important;
+        font-weight: 700 !important;
+    }
+
+    .house_price {
+        margin-left: 15px !important;
+    }
+    /* Contact Page */
+    .contact_header {
+        margin: 4rem 0 !important;
+    }
+    /* Vacancies Page */
+    .button_vacancies {
+        margin-bottom: 4rem;
+    }
+
+    .modifications_price {
+        margin-top: 4rem !important;
+    }
+
+    .contact-caption {
+        margin-top: 4rem !important;
+    }
 }
 
 @media screen and (max-width: 575px) {
-
+    /* Home Page */
     .main {
         height: 140rem !important;
     }
@@ -276,6 +420,7 @@
         font-size: 18px !important;
         font-weight: 400 !important;
         line-height: 18px;
+        text-align: left !important;
     }
 
     .info_title {
@@ -338,5 +483,76 @@
     .footer_1 {
         height: 85rem !important;
     }
+    /* Inzh and Otdelka Page */
+    .content_work {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+    }
+
+    .content_work:hover {
+        transform: scale(1.04) !important;
+    }
+
+    .work_photo {
+        height: 100% !important;
+    }
+
+    .content_items {
+        padding: 5px 5px !important;
+    }
+
+    .content_title {
+        font-size: 18px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .content_text {
+        font-size: 13px !important;
+        line-height: 13px !important;
+    }
+
+    .content_price {
+        font-size: 18px !important;
+        padding-top: 1rem !important;
+    }
+    /* House Page */
     
+    .house_img {
+        width: 100% !important;
+    }
+    
+    .house_category {
+        width: 300px !important;
+    }
+
+    .content_link_h {
+        display: flex;
+        justify-content: center;
+    }
+    /* Contact Page */
+    .contact-caption {
+        font-size: 30px !important;
+        display: flex;
+        justify-content: center;   
+    }
+
+    .contact_page_link {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Vacancies Page */
+    .modifications_text {
+        width: 90%;
+    }
+    /* About Us Page */
+    .about_as_header {
+        font-size: 48px !important;
+    }
+
+    .about_us_img {
+        height: 100%;
+        width: 100%;
+    }
 }

@@ -14,14 +14,14 @@
     {% endblock %}
     <div class="row">
       {% for item in work_inzh %}
-      <div class="col-md-6 mt-5">
+      <div class="col-12 col-lg-6 mt-5">
         <div class="content_work">
           <a class="content_link" href="{{ item.get_absolute_url }}">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-5">
                 <img src="{{ item.photo.url }}" class="d-block w-100 work_photo" alt="">
               </div>
-              <div class="col-md-7 content_items">
+              <div class="col-7 content_items">
                 <h3 class="content_title">{{ item.title }}</h3>
                 <p class="content_text">{{ item.content|truncatewords:20 }}</p>
                 <p class="content_price">{{ item.price }}</p>

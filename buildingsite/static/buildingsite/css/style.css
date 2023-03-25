@@ -98,11 +98,18 @@ section {
 .breaking_price {
     color: #e65100;
 }
+.info_link {
+    text-decoration: none;
+    color: #000;
+}
 .info-link {
     text-decoration: none;
     color: black;
 }
-
+.info-link:hover {
+    text-decoration: underline;
+    color: #e65100;
+}
 .title_info {
     width: 35%;
     margin: 7rem 0;
@@ -335,9 +342,8 @@ section {
     color: #fff;
 }
 .work_photo {
-    border-radius: 7px;
+    border-radius: 7px 0 0 7px;
     height: 329px;
-    width: 251px;
 }
 .content_items {
     padding: 2rem 1.5rem;
