@@ -6,8 +6,8 @@
                 <h3 class="text_dark">Давайте начнём!</h3>
             </div>
             <div class="ml-auto footer_button">
-                <a class="btn btn-dark rounded-0 py-4 px-5 footer_button_text" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                    href="#">Свяжитесь с нами</a>
+                <a class="btn btn-dark rounded-0 py-4 px-5 footer_button_text" data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal" href="#">Свяжитесь с нами</a>
             </div>
         </div>
         <div class="row footer_rows">
@@ -27,20 +27,21 @@
                     <h3>Компания</h3>
                     <ul class="list_unstyled">
                         <li class="footer_links-li">
-                            <a class="footer_links" href="#">О нас</a>
+                            <a class="footer_links" href="{% url 'about_us' %}">О нас</a>
                         </li>
                         <li class="footer_links-li">
-                            <a class="footer_links" href="#">Расчет стоимости</a>
+                            <a class="footer_links" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                href="#">Расчет стоимости</a>
                         </li>
                         <li class="footer_links-li">
-                            <a class="footer_links" href="#">Каталог проектов</a>
+                            <a class="footer_links" href="{% url 'house' %}">Каталог проектов</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="footer_block">
-                    <h3>Дальнейшая информация</h3>
+                    <h3>Дополнительная информация</h3>
                     <ul class="list_unstyled">
                         <li class="footer_links-li">
                             <a class="footer_links" href="{% url 'otdelka' %}">Отделочные работы</a>
@@ -58,17 +59,29 @@
                 <div class="footer_block">
                     <h3>Контакты</h3>
                     <ul class="list_unstyled">
-                        <li class="footer_links-li">
-                            <a class="footer_links" href="#">Instagram</a>
+                        <li class="footer_links-li footer_contacts">
+                            <a class="footer_links_icons" href="#"><i class="fab fa-instagram"></i></a>
                         </li>
-                        <li class="footer_links-li">
-                            <a class="footer_links" href="#">Telegram</a>
+                        <li class="footer_links-li footer_contacts">
+                            <a class="footer_links_icons" href="https://t.me/+79859653630"><i class="fab fa-telegram"></i></a>
                         </li>
-                        <li class="footer_links-li">
-                            <a class="footer_links" href="#">WhatsApp</a>
+                        <li class="footer_links-li footer_contacts">
+                            <a class="footer_links_icons" href="https://api.whatsapp.com/send/?phone=79859653630"><i class="fab fa-whatsapp"></i></a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_line"></div>
+    <div class="footer_block-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4 pt-4">
+                    <p class="footer_block-company">© 2013-2023 «ОбщееДело»</p>
+                </div>
+                <div class="col-12 offset-0 col-lg-4 offset-lg-4 pt-2"><a class="politica_link"
+                        href="{% url 'politica' %}">Политика конфеденциальности</a></div>
             </div>
         </div>
     </div>

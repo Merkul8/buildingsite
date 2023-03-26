@@ -251,3 +251,31 @@ class AboutUsCons(ListView):
                 return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+
+
+class PoliticaCons(ListView):
+    model = Construction
+    template_name = 'construction/politica.html'
+    form_class = ContactForm
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['logo'] = Construction.objects.get(pk=9)
+        context['form'] = self.form_class
+        return context
+    
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            text_for_send = ' '.join(
+                ['NAME - ' + form.cleaned_data['name'] + '\n', 
+                'PHONE NUMBER - ' + str(form.cleaned_data['phone_number']) + '\n', 
+                'E-MAIL - ' + form.cleaned_data['email'] + '\n', 
+                'COMMENT - ' + form.cleaned_data['comment'] + '\n'])
+            mail = send_mail(form.cleaned_data['name'], text_for_send,
+                      'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
+            if mail:
+                messages.success(request, 'Письмо отправлено')
+                return redirect('home')
+            else:
+                messages.error(request, 'Ошибка отправки')
