@@ -24,6 +24,16 @@ class Construction(models.Model):
         verbose_name = 'Вид работ'
         verbose_name_plural = 'Виды работ'
 
+
+class FormData(models.Model):
+    name = models.CharField(max_length=255, blank=True, verbose_name='Имя')
+    phone_number = models.IntegerField(blank=True, verbose_name='Номер телефона')
+    email = models.EmailField(verbose_name='Почта')
+    comment = models.CharField(max_length=255, blank=True, verbose_name='Комментарий')
+
+    def __str__(self):
+        return self.phone_number
+
         
 class Category(models.Model):
     title = models.CharField(max_length=150, db_index=True, verbose_name='Категория')

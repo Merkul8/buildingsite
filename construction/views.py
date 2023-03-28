@@ -3,8 +3,9 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
-from .models import Construction
+from .models import Construction, FormData
 from django.views.generic import ListView, DetailView
+
 
 class Home(ListView):
     model = Construction
@@ -39,9 +40,20 @@ class Home(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
 
 
 class InzhCons(ListView):
@@ -68,12 +80,22 @@ class InzhCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
 
 
-class CategoryInzh(DetailView):
+class CategoryItem(DetailView):
     model = Construction
     form_class = ContactForm
     context_object_name = 'work_item'
@@ -97,10 +119,19 @@ class CategoryInzh(DetailView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
-
+        else:
+            form = self.form_class()
+        return form
 
 class OtdelkaCons(ListView):
     model = Construction
@@ -114,6 +145,7 @@ class OtdelkaCons(ListView):
         context['form'] = self.form_class
         return context
     
+
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
@@ -126,10 +158,20 @@ class OtdelkaCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
-
+        else:
+            form = self.form_class()
+        return form
+    
 
 class HouseCons(ListView):
     model = Construction
@@ -156,9 +198,19 @@ class HouseCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
 
 
 class ContactCons(ListView):
@@ -184,10 +236,20 @@ class ContactCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
-
+        else:
+            form = self.form_class()
+        return form
+    
 
 class VacanciesCons(ListView):
     model = Construction
@@ -212,9 +274,19 @@ class VacanciesCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
 
 
 class AboutUsCons(ListView):
@@ -248,9 +320,19 @@ class AboutUsCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
 
 
 class PoliticaCons(ListView):
@@ -276,6 +358,17 @@ class PoliticaCons(ListView):
                       'max.merkulov.00@mail.ru', ['max.merkulov.00@gmail.com'], fail_silently=True)
             if mail:
                 messages.success(request, 'Письмо отправлено')
-                return redirect('home')
+                list_numbers = []
+                for item in FormData.objects.all():
+                    list_numbers.append(item.phone_number)
+                if form.cleaned_data['phone_number'] in list_numbers:
+                    return redirect('home')    
+                else:
+                    FormData.objects.create(**form.cleaned_data)
+                    return redirect('home')
             else:
                 messages.error(request, 'Ошибка отправки')
+        else:
+            form = self.form_class()
+        return form
+            

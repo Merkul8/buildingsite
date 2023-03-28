@@ -2,9 +2,9 @@
 html {
     font-size: 10px;
 }
-
 .button {
-    padding: 2rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 3rem;
     color: #fefefe;
     background-color: #e65100;
     border: none;
@@ -22,7 +22,8 @@ html {
 
 /* Buttons */
 .about_us_button {
-    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
     border-radius: 3px; 
     background-color: #212121;
     border-color: #212121;
@@ -45,6 +46,7 @@ html {
     border: none;
 }
 .home_button {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 3rem;
     padding: 1.5rem 6rem;
     font-size: 2rem;
@@ -86,6 +88,7 @@ html {
     border-bottom: 1px solid #bdbdbd;
 }
 .home_title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px !important;
 }
 .breaking_name {
@@ -93,13 +96,12 @@ html {
     margin-right: 5px;
 }
 .breaking_price {
+    font-family: 'Montserrat', sans-serif;
     color: #e65100;
 }
-.info_link {
-    text-decoration: none;
-    color: #000;
-}
+
 .info-link {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -111,11 +113,17 @@ html {
     width: 35%;
     margin: 7rem 0;
 }
+.info_link {
+    text-decoration: none;
+    color: #000;
+}
 .name_work {
+    font-family: 'Montserrat', sans-serif;
     font-size: 5rem;
     font-weight: 1000;
 }
 .button_work {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 5rem;
     width: 100%;
     font-size: 2rem;
@@ -128,11 +136,11 @@ html {
     background-position: top;
 }
 .main-title {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 15rem;
     margin-left: 5rem;
     font-size: 4rem;
     text-align: center;
-    font-weight: 700;
 }
 .remont_title {
     color: #212529;
@@ -142,7 +150,7 @@ html {
 }
 .main-form {
     display: inline-block;
-    height: 50rem;
+    height: 55rem;
     width: 43rem;
     background-color: #e65100;
     color: #fefefe;
@@ -154,10 +162,12 @@ html {
     /* border: 5px solid #000; */
 }
 .content-text{
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     padding: 3rem 4rem;
 }
 .par-text {
+    font-family: 'Montserrat', sans-serif;
     display: block;
     font-size: 1.3rem;
     font-weight: 300;
@@ -167,23 +177,29 @@ html {
     text-align: left;
 }
 .info_title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 23px; 
     font-weight: 700;
 }
 .info_text {
+    font-family: 'Montserrat', sans-serif;
     line-height: 20px; 
     font-size: 15px;
 }
 .info_card_2 {
     text-align: right;
 }
+.breadcrumb {
+    font-family: 'Montserrat', sans-serif;
+}
 /* Footer */
 .footer_1 {
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     color: #fefefe;
     background-color: #212121;
     margin-top: 10rem;
-    height: 30rem;
+    height: 32rem;
 }
 .footer_1 .top_footer{
     background: #e65100;
@@ -193,12 +209,17 @@ html {
     padding: 20px;
 }
 .top_text {
+    font-family: 'Montserrat', sans-serif;
     color: #fefefe;
     font-size: 30px;
 }
 .text_dark {
+    font-family: 'Montserrat', sans-serif;
     color: #000!important;
     font-size: 20px;
+}
+.footer_button_text {
+    font-family: 'Montserrat', sans-serif;    
 }
 .ml-auto {
     display: block;
@@ -242,20 +263,28 @@ html {
 .footer_line {
     border-bottom: 2px solid #424242;
 }
+.footer_logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
 .politica_link {
     text-decoration: underline;
     color: #e65100;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
 .footer_block-company {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 /* Contact Page */
 .contact-caption {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 8rem;
     margin-bottom: 3rem;
     font-size: 25px;
@@ -267,6 +296,7 @@ html {
     font-size: 20px;
 }
 .contact_header {
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px; 
     font-weight: 800;
     margin: 6rem 0;
@@ -278,17 +308,23 @@ html {
     font-weight: 500;
 }
 .text_before_form {
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
 .form_header {
+    font-family: 'Montserrat 500', sans-serif;
     font-size: 30px;
 }
 .contact_page_link {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #000;
-    font-size: 3rem;
+    font-size: 25px;
     transition: 0.3s;
     font-weight: 500;
+}
+.contact_page_link i {
+    padding: 5px;
 }
 .contact_page_link:hover {
     text-decoration: underline;
@@ -299,6 +335,7 @@ html {
     color: #e65100 !important;
 }
 .modifications {
+    font-family: 'Montserrat', sans-serif;
     margin: 5rem 0; 
     border: 1px solid #212121;
 }
@@ -310,10 +347,11 @@ html {
 }
 .modifications_card_body {
     text-align: left; 
-    margin-left: 2.5rem; 
+    margin-left: 10px; 
     margin-bottom: 2rem;
 }
 .modifications_title {
+    font-family: 'Montserrat', sans-serif;
     margin: 2rem 0; 
     font-size: 20px;
 }
@@ -331,15 +369,18 @@ html {
 }
 /* About Us Page */
 .text_size {
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px!important;
 }
 .about_as_header {
+    font-family: 'Montserrat', sans-serif;
     font-size: 70px; 
     font-weight: 300; 
     margin-top: 10rem;
     margin-bottom: 3rem;
 }
 .about_us_caption {
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px; 
     color: #e65100; 
     margin-top: 6rem; 
@@ -349,6 +390,7 @@ html {
     margin-bottom: 3rem;
 }
 .list_work {
+    font-family: 'Montserrat', sans-serif;
     margin-left: 0.6rem;
 }
 /* Inzh Page */
@@ -380,14 +422,17 @@ html {
     padding: 2rem 1.5rem;
 }
 .content_title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
 .content_text {
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     line-height: 2.3rem;
 }
 .content_price {
+    font-family: 'Montserrat', sans-serif;
     text-align: right;
     font-size: 20px;
     padding-right: 3.2rem;
@@ -426,6 +471,7 @@ html {
     text-decoration: none;
 }
 .house_title {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-bottom: 3rem;
     margin-top: 3rem;
@@ -434,6 +480,7 @@ html {
     font-weight: 800;
 }
 .house_price {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-left: 3rem;
     font-size: 2rem;
@@ -444,6 +491,7 @@ html {
     margin: 10rem 0;
 }
 .cat_home_title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: #fff;
@@ -451,16 +499,19 @@ html {
     margin-left: 13rem;
 }
 .cat_home_text {
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     margin-top: 8rem;
 }
 .houses_params {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 3rem;
     color: #e65100;
     font-size: 25px;
 }
 .cat_home_param {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 30px;
 }
@@ -474,11 +525,13 @@ html {
     left: -107px;
 }
 .upper_text {
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     color: #fff;
     margin-left: 13rem;
 }
 .price_item {
+    font-family: 'Montserrat', sans-serif;
     color: #000;
     text-align: center;
     font-size: 33px;
@@ -498,6 +551,7 @@ html {
 
 }
 .house_button {
+    font-family: 'Montserrat', sans-serif;
     width: 70%;
     background-color: white;
     padding: 15px 0 0 10px; 
